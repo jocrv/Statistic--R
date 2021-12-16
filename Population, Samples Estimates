@@ -8,7 +8,7 @@ mean(x)
 
 Population, Samples, and Estimates Exercises #2
 
-1 point possible (graded)
+
 Now use the rafalib package and use the popsd() function to compute the population standard deviation. 4.420501
 
 
@@ -17,7 +17,7 @@ library(rafalib)
 popsd(x)
 
 #3
-1 point possible (graded)
+
 Set the seed at 1. Take a random sample  of size 25 from x.
 What is the sample average?
 
@@ -26,7 +26,7 @@ X <- sample(x,25)
 mean(X)
 
 #4
-1 point possible (graded)
+
 Use dplyr to create a vector y with the body weight of all males on the high fat hf) diet.
 What is this population's average? 34.84793
 
@@ -34,14 +34,14 @@ y <- filter(dat, Sex=="M" & Diet=="hf") %>% select(Bodyweight) %>% unlist
 mean(y)
 
 #5
-1 point possible (graded)
+
 Now use the rafalib package and use the popsd() function to compute the population standard deviation. 5.574609
 
 library(rafalib)
 popsd(y)
 
 #6
-1 point possible (graded)
+
 Set the seed at 1. Take a random sample  of size 25 from y.
 What is the sample average?
 
@@ -50,13 +50,13 @@ Y <- sample(y,25)
 mean(Y)
 
 #7
-1 point possible (graded)
+
 What is the difference in absolute value between  and ?
 
 abs( ( mean(y) - mean(x) ) - ( mean(Y) - mean(X) ) )
 
 #8
-1 point possible (graded)
+
 Repeat the above for females, this time setting the seed to 2.
 What is the difference in absolute value between  and ?
 Make sure to set the seed to 2 before each sample() call. This function should be called twice.
